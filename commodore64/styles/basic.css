@@ -1,0 +1,16 @@
+* {padding:0;margin:0;}
+
+body {font-family: 'Alegreya Sans', sans-serif;font-weight:bold;font-size:18px;}
+
+#inputBox{display:block;width:0;height:0;border:none;}
+
+.air-quotes {font-style:italic;}
+
+.content-body {padding-top:10px;}
+
+.background-outer {padding:40px;background-color:#7C71DA;}
+.background-inner {padding:0 0 20px 0;height:400px;background-color:#3E32A2;color:#7C71DA;}
+
+.cursor {width:16px;height:16px;line-height:1px;}
+.cursor.on {background-color:#7C71DA;}
+.cursor.off {background-color:#3E32A2;}

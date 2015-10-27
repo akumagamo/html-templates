@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>like Chat</title>
+		<meta charset="utf-8">
+		<link rel="shortcut icon"  type="image/png" href="images/favicon.png">
+		<link rel="stylesheet" href="styles/basic.css">
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Alegreya+Sans:400,900">
+		
+		<script type="text/javascript">
+			var cursorInterval;
+			var BLINK_SPEED = 500;
+			
+			window.onclick = function(){
+				document.querySelector("#inputBox").focus();
+			};			
+			
+			window.onload = function(){
+				createNewLineAndPrompt();
+				cursorInterval = setInterval(function(){
+					var cursor = document.querySelector(".cursor");
+					if(cursor){
+						if(cursor.className.indexOf("on")>-1){
+							cursor.className = cursor.className.replace("on","off");
+						}else{
+							cursor.className = cursor.className.replace("off","on");
+						}
+					}
+					delete cursor;
+				}, BLINK_SPEED);
+				
+				document.querySelector("#inputBox").addEventListener("keyup", function(e){
+					console.info(String.fromCharCode(e.keyCode));
+				
+				}, false);
+				
+				document.querySelector("#inputBox").focus();
+			}
+			
+			window.onbeforeunload = function(){
+				console.info(clearInterval(cursorInterval));
+			}
+			
+			function createNewLineAndPrompt(){
+				document.querySelector(".content-body").innerHTML += 
+				document.querySelector(".new-line").innerHTML
+			}
+		
+		</script>
+		
+		<script class="new-line" type="text/template">
+			<span>READY.</span><br />
+			<div class="cursor on"></div>
+		</script>
+	</head>
+	<body>
+		<div class="background-outer">
+			<div class="background-inner">
+				<div class="content-body">
+					<input type="text" id="inputBox" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
