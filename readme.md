@@ -11,6 +11,7 @@ Sevleralt HTML Templates and Demos
 ## Calling Cards
 * leibaerztin
 * shiatsu-lam
-* slapp [wip]
+* slapp [wip]  
+
 ![callingcards screenshots](https://raw.githubusercontent.com/akumagamo/html-templates/master/readme/calling-cards.png "Screenshots")  
 
