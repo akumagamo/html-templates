@@ -9,6 +9,7 @@ Sevleralt HTML Templates and Demos
 * Google Material Sytle
 
 ## Calling Cards
+![callingcards screenshots](https://raw.githubusercontent.com/akumagamo/html-templates/master/readme/calling-cards.png "Screenshots")  
 * leibaerztin
 * shiatsu-lam
-* slapp
+* slapp [wip]
