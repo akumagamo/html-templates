@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>slapp(s)</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+		border: 0 none;
+		overflow: hidden;
+      }
+    </style>
+	<link rel="shortcut icon" href="/clap.ico" type="image/x-icon">
+  </head>
+  <body>
+  <noscript> Completed 2016 !!!</noscript>
+    <canvas id="canvas"></canvas>
+    <script>
+	   
+	   (function() {
+				var canvas = document.getElementById('canvas'),
+				context = canvas.getContext('2d');
+
+			window.addEventListener('resize', resizeCanvas, false);
+
+			function resizeCanvas() {
+					canvas.width = window.innerWidth;
+					canvas.height = window.innerHeight ;
+
+					context.fillStyle   = '#e1e1e1'; 
+					context.fillRect  (0,   0, canvas.width, canvas.height);   
+					
+					drawStuff(); 
+			}
+			resizeCanvas();
+
+			function drawStuff() {
+				var centerX = canvas.width / 2;
+				var centerY = canvas.height / 2 + 50;
+				
+				var size = Math.min(canvas.width, canvas.height) ;
+				
+				var radius = (size / 2 ) - 120;
+
+				if (radius > 0 ){
+					context.beginPath();
+					context.arc(centerX, centerY, radius, 0, 1.6 *Math.PI, false);
+					context.lineWidth = radius / 2;
+					context.strokeStyle = "#df0000";
+					context.stroke();
+					var text = " 80%";
+					var fontSize = (radius / 3);
+					context.font = "bold " + fontSize + "px Arial ";
+					context.textAlign = "center";
+					context.fillStyle = "#df0000";
+					console.info(context.measureText(text));
+					console.info(context.font);
+					console.info(radius);
+					
+					context.fillText(text, centerX , centerY + (fontSize/3) );
+
+					var days = parseInt((new Date(2016,0,1)- Date.now())/1000/60/60/24);
+					text = "Ready in " + days + " days!";
+					if(context.measureText(text).width >= canvas.width){
+					    context.font = "bold " + (fontSize - 20) + "px Arial ";
+					}
+					context.fillText(text, centerX , centerY - 20 - fontSize - radius);
+					
+				}
+			}
+		})();
+	   
+	   
+    </script>
+  </body>
+</html>      

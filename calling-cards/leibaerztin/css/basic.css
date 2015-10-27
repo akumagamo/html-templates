@@ -1,0 +1,126 @@
+*{
+	padding:0; 
+	margin:0;
+	color:#0042C7;
+	font-family: 'PT Sans Narrow';
+	font-size:20px;
+}
+
+.wrapper{
+	padding-left:50%;
+	/*padding-top:50%;*/
+}
+
+.xsmall .page{
+	width: 100%;
+	height:100%;
+	border:none;
+	overflow:hidden;
+}
+
+ .xsmall .body{
+	text-align:center;
+	height:300px;
+	background-color:#99CCFF;
+	padding:20px;
+}
+
+.xsmall  .header img{
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	width:90px;
+}
+
+.xsmall .header h1{
+	padding-top:90px;
+	font-size:60px;
+}
+ .xsmall .page .body{
+	height:100%;
+ }
+
+ .xsmall .page .body  div{
+	float:none;
+	text-align:center;
+}
+
+.small .page{
+	margin-left: -300px;
+	margin-top: 30px;
+	width: 600px;
+	height:460px;
+	border:solid 1px gray;
+	overflow:hidden;
+	position:absolute;
+}
+
+ .small .header img{
+	position:absolute;
+	top:10px;
+	right:10px;
+	width:100px;
+}
+.small .header h1{
+	padding-top:70px;
+	font-size:80px;
+	font-weight:900;
+}
+
+.medium .page{
+	margin-left: -450px;
+	margin-top: 30px;
+	width: 900px;
+	height:460px;
+	border:solid 1px gray;
+	overflow:hidden;
+	position:absolute;
+}
+
+.big .page{
+	margin-left: -512px;
+	margin-top: 30px;
+	width: 980px;
+	height:460px;
+	border:solid 1px gray;
+	overflow:hidden;
+	position:absolute;
+}
+
+.header{
+	height:160px;
+	text-align:center;
+}
+ .header img{
+	position:absolute;
+	top:20px;
+	right:20px;
+	width:120px;
+}
+ .body{
+	text-align:center;
+	height:400px;
+	background-color:#99CCFF;
+	padding:20px;
+}
+
+.header h1{
+	padding-top:60px;
+	font-size:90px;
+	font-weight:900;
+}
+
+ .info h2{
+	font-size:1.2em;
+	font-weight:900;
+}
+
+ .address{
+float:left;
+	text-align:left;
+}
+
+ .webaddress{
+float:right;
+	text-align:right;
+}
