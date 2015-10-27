@@ -7,3 +7,8 @@ Sevleralt HTML Templates and Demos
 ## Featured Templates
 * Commodore64 Style
 * Google Material Sytle
+
+## Calling Cards
+* leibaerztin
+* shiatsu-lam
+* slapp
